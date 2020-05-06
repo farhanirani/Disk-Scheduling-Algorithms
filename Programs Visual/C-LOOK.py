@@ -57,12 +57,10 @@ cylindersOffset.pop(0)
 cylinders.pop(-1)
 cylindersOffset.pop(-1)
 
-print(cylindersOffset)
 maxnum = 1 + cylinders[-1]
 for _ in range(len(cylinders)):
     pygame.time.delay(700)
     if not moveleft:
-        print(' -> ',head,end="")
         try:
             previousValue = head
             previousValueOffset = cylindersOffset[cylinders.index(head)]
@@ -84,7 +82,6 @@ for _ in range(len(cylinders)):
         except:
             pass
     else:
-        print(' -> ',head,end="")
         try:
             previousValue = head
             previousValueOffset = cylindersOffset[cylinders.index(head)]
