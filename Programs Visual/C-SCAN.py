@@ -36,7 +36,7 @@ else:
 pygame.display.set_caption("C-SCAN")
 win = pygame.display.set_mode((1000, 500),0,32)
 win.fill((250,250,250))
-font = pygame.font.SysFont('comicsans', 20)
+font = pygame.font.SysFont('Ariel', 20)
 pygame.display.update()
 currentY = 100
 
@@ -100,7 +100,7 @@ for _ in range(len(cylinders)):
 
 
 
-font = pygame.font.SysFont('comicsans', 30)
+font = pygame.font.SysFont('Ariel', 30)
 text = font.render("Total head movement : "+str(headmovement)+" cylinders", 1, (0,0,0))
 win.blit(text, (450,450))
 pygame.display.update()
